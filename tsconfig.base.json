@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "module": "ESNext",
+    "target": "ES2015",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": ["packages", "scripts", "packages-shared/types", "node_modules/@types"]
+  }
+}
