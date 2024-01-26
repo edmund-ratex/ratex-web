@@ -1,0 +1,23 @@
+{
+  "name": "@fd/web3",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "typescript": "5.1.3"
+  },
+  "dependencies": {
+    "@fd/api": "^1.0.0",
+    "@fd/const": "workspace:*",
+    "@fd/env": "^1.0.0",
+    "@fd/helper": "^1.0.0",
+    "@fd/storage": "workspace:*",
+    "@fd/streams": "^1.0.0",
+    "@fd/toast": "^1.0.0",
+    "@types/qrcode": "1.5.1",
+    "@wagmi/core": "1.4.5",
+    "big.js": "6.2.1",
+    "ethers": "6.6.2",
+    "qrcode": "1.5.3",
+    "viem": "1.19.9"
+  }
+}
