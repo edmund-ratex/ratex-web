@@ -1,0 +1,10 @@
+{
+  "name": "@fd/calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@fd/helper": "^1.0.0",
+    "big.js": "6.2.1"
+  }
+}
