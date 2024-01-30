@@ -1,0 +1,41 @@
+{
+  "name": "@fd-cms/help-center",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "buildId": 103,
+  "scripts": {
+    "dev:client": "cross-env VIET_ENV=client DEV=1 vite --config vite.config-client.ts",
+    "dev:server": "cross-env VIET_ENV=client DEV=1 vite --config vite.config-server.ts",
+    "build": "npm run build:client && npm run build:render && npm run build:server",
+    "build:client": "cross-env VIET_ENV=client vite build --config vite.config-client.ts",
+    "build:render": "cross-env VIET_ENV=render vite build --config vite.config-render.ts",
+    "build:server": "cross-env VIET_ENV=server vite build --config vite.config-server.ts",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@types/testing-library__jest-dom": "5.14.6",
+    "jsdom": "22.1.0",
+    "solid-testing-library": "0.5.1",
+    "typescript": "5.1.3",
+    "vite": "4.3.9",
+    "vite-plugin-solid": "2.7.0",
+    "vitest": "0.31.4"
+  },
+  "dependencies": {
+    "@fd/env": "workspace:*",
+    "@fd/helper": "workspace:*",
+    "@fd/link": "workspace:*",
+    "@fd/modules": "workspace:*",
+    "@fd/router": "workspace:*",
+    "@fd/streams": "workspace:*",
+    "@fd/styled": "workspace:*",
+    "@types/qs": "6.9.7",
+    "axios": "1.4.0",
+    "cross-env": "7.0.3",
+    "json5": "2.2.3",
+    "qs": "6.11.2",
+    "vite-plugin-node": "3.0.2"
+  }
+}
