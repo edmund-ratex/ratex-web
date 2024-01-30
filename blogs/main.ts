@@ -17,7 +17,6 @@ export function bootstrap(contentService: ContentService) {
 }
 
 function routeFilter({action, pathname}: Url): boolean {
-  // replace 同一个页面时，不重新创建页面
   if (['PUSH', 'REPLACE'].includes(action) && pathname === currentPathname) {
     return false;
   }

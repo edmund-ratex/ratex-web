@@ -1,9 +1,6 @@
 import Big from 'big.js';
 import {eq} from '@fd/helper/math';
 
-/**
- * 计算未接盈亏
- */
 export function calcUnrealisedPnl({side, contractSide, contractSize, qty, entryPrice, exitPrice}): ValueNum {
   if (eq(qty, 0) || eq(entryPrice, 0) || eq(exitPrice, 0)) {
     return '0';
